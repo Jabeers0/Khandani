@@ -4,105 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KHANDANI</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        // Eita click korle ekta alert message dekhabe
+        function handleOrder(categoryName) {
+            alert("Apni " + categoryName + " category-ti select korechhen. Ekhon apnake product dekhanor jonno niye jaowa hobe!");
+            // Ekhane ashol website-e product page-e redirect kora hoto
+        }
+    </script>
+
+    <style>
+        /* CSS is the same as before for structure */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #e67e22; color: white; padding: 10px 20px; text-align: center; }
+        nav { background-color: #333; }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; }
+        nav ul li a { display: block; color: white; text-align: center; padding: 14px 20px; text-decoration: none; }
+        nav ul li a:hover { background-color: #555; }
+        .main-container { display: flex; max-width: 1200px; margin: 20px auto; padding: 0 20px; }
+        .sidebar { flex: 1; background-color: white; padding: 15px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .sidebar h2 { margin-top: 0; border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+        .sidebar ul { list-style: none; padding: 0; }
+        /* Link style update: cursor pointer to show it's clickable */
+        .sidebar li a { display: block; padding: 8px 0; text-decoration: none; color: #555; border-bottom: 1px dotted #eee; cursor: pointer; } 
+        .content { flex: 3; margin-left: 20px; background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        footer { background-color: #333; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+    </style>
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">ওয়েবসাইট লোগো</div>
-        <nav>
-            <ul>
-                <li><a href="#hero">হোম</a></li>
-                <li><a href="#products">পণ্য</a></li>
-                <li><a href="#feedback">ফিডব্যাক</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="logo-text">Nitto Sodai Logo</div>
+        <p>খান্দানী একটি বিশস্ত অনালাইন শপ</p>
+        <div class="alert-bar">Order Complete! Back to Homepage</div>
     </header>
 
-    <div class="announcement-bar">
-        📢 দারুণ অফার! সীমিত সময়ের জন্য বিশেষ ছাড় চলছে!
-    </div>
-
-    <section id="hero" class="hero">
-        <h1>স্বাগতম! আপনার সেরা সমাধান এখানে!</h1>
-        <p>আমরা সেরা পণ্য এবং পরিষেবা দিয়ে থাকি।</p>
-        <button>আরও জানুন</button>
-    </section>
-    
-    <section id="stats" class="stats">
-        <div class="stat-item"><span>৫০০০+</span><p>সন্তুষ্ট গ্রাহক</p></div>
-        <div class="stat-item"><span>১০+</span><p>পুরস্কার</p></div>
-        <div class="stat-item"><span>৯৯%</span><p>সফলতা</p></div>
-    </section>
-
-    <section id="products" class="products">
-        <h2>আমাদের পণ্য</h2>
-        <div class="product-list">
-            <div class="product-card" data-product-id="1">
-                <img src="product1.jpg" alt="পণ্য ১">
-                <h3>পণ্য ১</h3>
-                <p>এটি একটি চমৎকার পণ্য। আরও জানতে ক্লিক করুন।</p>
-            </div>
-            <div class="product-card" data-product-id="2">
-                <img src="product2.jpg" alt="পণ্য ২">
-                <h3>পণ্য ২</h3>
-                <p>এটি একটি অত্যাধুনিক পণ্য। আরও জানতে ক্লিক করুন।</p>
-            </div>
-            </div>
-    </section>
-
-    <section id="category" class="category">
-        <h2>পণ্য ক্যাটাগরি</h2>
+    <nav>
         <ul>
-            <li>ইলেকট্রনিক্স</li>
-            <li>ফ্যাশন</li>
-            <li>বই</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cart 0</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Call Now</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <section id="feedback" class="feedback">
-        <h2>গ্রাহক ফিডব্যাক</h2>
-        <div class="feedback-item">
-            <p>"অসাধারণ পণ্য! আমি খুবই খুশি।"</p>
-            <cite>- রাজু আহমেদ</cite>
-        </div>
-        </section>
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#" onclick="handleOrder('স্পেশাল অফারের আইটেম')">স্পেশাল অফারের আইটেম</a></li>
+                <li><a href="#" onclick="handleOrder('ফ্যামিলি বাজারের সব আইটেম')">ফ্যামিলি বাজারের সব আইটেম</a></li>
+                <li><a href="#" onclick="handleOrder('চাল ডাল মসলা')">চাল ডাল মসলা</a></li>
+                <li><a href="#" onclick="handleOrder('পেঁয়াজ আলু তেল')">পেঁয়াজ আলু তেল</a></li>
+                <li><a href="#" onclick="handleOrder('চাপাতা দুধ নুডলস')">চাপাতা দুধ নুডলস</a></li>
+                <li><a href="#" onclick="handleOrder('কসমেটিকস')">কসমেটিকস</a></li>
+                <li><a href="#" onclick="handleOrder('সাবান, হারপিক')">সাবান, হারপিক</a></li>
+                <li><a href="#" onclick="handleOrder('অল বেবি আইটেম')">অল বেবি আইটেম</a></li>
+                <li><a href="#" onclick="handleOrder('ইলেক্ট্রনিক, ক্লিনার ব্রাশ')">ইলেক্ট্রনিক, ক্লিনার ব্রাশ</a></li>
+                <li><a href="#" onclick="handleOrder('চুলের কালার ,শেভিং')">চুলের কালার ,শেভিং</a></li>
+                <li><a href="#" onclick="handleOrder('বিস্কুট কেক জুস')">বিস্কুট কেক জুস</a></li>
+                <li><a href="#" onclick="handleOrder('টিসু, এডাল ডায়পার কয়েল, স্পে')">টিসু, এডাল ডায়পার কয়েল, স্পে</a></li>
+                <li><a href="#" onclick="handleOrder('চকলেট')">চকলেট</a></li>
+                <li><a href="#" onclick="handleOrder('ষ্টেশনারী')">ষ্টেশনারী</a></li>
+            </ul>
+        </aside>
 
-    <section id="gallery" class="gallery">
-        <h2>ইমেজ গ্যালারি</h2>
-        <div class="image-grid">
-            <img src="gallery1.jpg" alt="গ্যালারি ইমেজ ১">
-            <img src="gallery2.jpg" alt="গ্যালারি ইমেজ ২">
-            <img src="gallery3.jpg" alt="গ্যালারি ইমেজ ৩">
-        </div>
-    </section>
-
-    <section id="faq" class="faq">
-        <h2>সাধারণ জিজ্ঞাসা (FAQ)</h2>
-        <div class="faq-item">
-            <details>
-                <summary>পণ্য ডেলিভারি হতে কত সময় লাগে?</summary>
-                <p>সাধারণত ৩-৫ কার্যদিবস লাগে।</p>
-            </details>
-        </div>
-        <div class="faq-item">
-            <details>
-                <summary>রিটার্ন পলিসি কী?</summary>
-                <p>ডেলিভারির ৭ দিনের মধ্যে রিটার্ন করা যায়।</p>
-            </details>
-        </div>
-    </section>
-    
-    <div id="product-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h3 id="modal-title"></h3>
-            <p id="modal-description"></p>
-            
-        </div>
+        <main class="content">
+            <h2>Offer and Campaign Section</h2>
+            <p>Offer 1 | Campaign 2 | Offer 3</p>
+            <p><strong>Click on any category link in the left sidebar to see the order simulation!</strong></p>
+        </main>
     </div>
 
-    <script src="script.js"></script>
+    <footer>
+        <p>Our Store Gallery: Store Interior 1, Product Shelf Display, Fresh Produce Section, Store Exterior</p>
+        <p>Find Our Location | Visit Our Shop</p>
+    </footer>
+
 </body>
 </html>
