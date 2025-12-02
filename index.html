@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHANDANI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">ওয়েবসাইট লোগো</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">হোম</a></li>
+                <li><a href="#products">পণ্য</a></li>
+                <li><a href="#feedback">ফিডব্যাক</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="announcement-bar">
+        📢 দারুণ অফার! সীমিত সময়ের জন্য বিশেষ ছাড় চলছে!
+    </div>
+
+    <section id="hero" class="hero">
+        <h1>স্বাগতম! আপনার সেরা সমাধান এখানে!</h1>
+        <p>আমরা সেরা পণ্য এবং পরিষেবা দিয়ে থাকি।</p>
+        <button>আরও জানুন</button>
+    </section>
+    
+    <section id="stats" class="stats">
+        <div class="stat-item"><span>৫০০০+</span><p>সন্তুষ্ট গ্রাহক</p></div>
+        <div class="stat-item"><span>১০+</span><p>পুরস্কার</p></div>
+        <div class="stat-item"><span>৯৯%</span><p>সফলতা</p></div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>আমাদের পণ্য</h2>
+        <div class="product-list">
+            <div class="product-card" data-product-id="1">
+                <img src="product1.jpg" alt="পণ্য ১">
+                <h3>পণ্য ১</h3>
+                <p>এটি একটি চমৎকার পণ্য। আরও জানতে ক্লিক করুন।</p>
+            </div>
+            <div class="product-card" data-product-id="2">
+                <img src="product2.jpg" alt="পণ্য ২">
+                <h3>পণ্য ২</h3>
+                <p>এটি একটি অত্যাধুনিক পণ্য। আরও জানতে ক্লিক করুন।</p>
+            </div>
+            </div>
+    </section>
+
+    <section id="category" class="category">
+        <h2>পণ্য ক্যাটাগরি</h2>
+        <ul>
+            <li>ইলেকট্রনিক্স</li>
+            <li>ফ্যাশন</li>
+            <li>বই</li>
+        </ul>
+    </section>
+
+    <section id="feedback" class="feedback">
+        <h2>গ্রাহক ফিডব্যাক</h2>
+        <div class="feedback-item">
+            <p>"অসাধারণ পণ্য! আমি খুবই খুশি।"</p>
+            <cite>- রাজু আহমেদ</cite>
+        </div>
+        </section>
+
+    <section id="gallery" class="gallery">
+        <h2>ইমেজ গ্যালারি</h2>
+        <div class="image-grid">
+            <img src="gallery1.jpg" alt="গ্যালারি ইমেজ ১">
+            <img src="gallery2.jpg" alt="গ্যালারি ইমেজ ২">
+            <img src="gallery3.jpg" alt="গ্যালারি ইমেজ ৩">
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>সাধারণ জিজ্ঞাসা (FAQ)</h2>
+        <div class="faq-item">
+            <details>
+                <summary>পণ্য ডেলিভারি হতে কত সময় লাগে?</summary>
+                <p>সাধারণত ৩-৫ কার্যদিবস লাগে।</p>
+            </details>
+        </div>
+        <div class="faq-item">
+            <details>
+                <summary>রিটার্ন পলিসি কী?</summary>
+                <p>ডেলিভারির ৭ দিনের মধ্যে রিটার্ন করা যায়।</p>
+            </details>
+        </div>
+    </section>
+    
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
